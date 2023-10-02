@@ -1,6 +1,8 @@
 #!/bin/bash
 set -euo pipefail
 
+docker stop 05dc65e361a55fb8a551c7b8e4c071957ae59f11fb8b302e33c5fc1cdf1d667f
+docker rm 05dc65e361a55fb8a551c7b8e4c071957ae59f11fb8b302e33c5fc1cdf1d667f
 
 rm -r tempdir
 mkdir tempdir
