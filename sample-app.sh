@@ -1,8 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-docker stop 270f43e7d7fb66addede2dd6fe3793f4529a4456d7faca06cf356d4b95c69757
-docker rm 270f43e7d7fb66addede2dd6fe3793f4529a4456d7faca06cf356d4b95c69757
+
 rm -r tempdir
 mkdir tempdir
 mkdir tempdir/templates
