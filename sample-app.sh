@@ -28,8 +28,7 @@ cd tempdir || exit
 docker stop samplerunning
 docker rm samplerunning
 
-docker stop a51c85135bfc20c2c212deedbb2edc3aad77b2b30117188f422143d13bc8276b
-docker rm a51c85135bfc20c2c212deedbb2edc3aad77b2b30117188f422143d13bc8276b
+
 
 docker build -t sampleapp .
 docker run -t -d -p 5050:5050 --name samplerunning sampleapp
