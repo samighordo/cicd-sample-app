@@ -28,6 +28,9 @@ cd tempdir || exit
 docker stop samplerunning
 docker rm samplerunning
 
+docker stop samplerunning10
+docker rm samplerunning10
+
 docker build -t sampleapp .
 docker run -t -d -p 5050:5050 --name samplerunning2 sampleapp
 docker ps -a 
