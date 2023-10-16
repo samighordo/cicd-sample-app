@@ -23,6 +23,11 @@ CMD python /home/myapp/sample_app.py
 _EOF_
 
 cd tempdir || exit
+
+docker rm samplerunning
+docker rm samplerunning2
+docker rm samplerunning3
+docker rm samplerunning4
 docker build -t sampleapp .
 docker run -t -d -p 5050:5050 --name samplerunning5 sampleapp
 docker ps -a 
