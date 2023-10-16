@@ -24,9 +24,8 @@ _EOF_
 
 cd tempdir || exit
 
-
-docker stop samplerunning
-docker rm samplerunning
+docker stop $(docker ps -a -q)
+docker remove $(docker ps -a -q)
 
 
 
