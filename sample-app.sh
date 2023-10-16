@@ -25,8 +25,6 @@ _EOF_
 cd tempdir || exit
 
 
-docker stop samplerunning
-docker rm samplerunning
 
 
 
